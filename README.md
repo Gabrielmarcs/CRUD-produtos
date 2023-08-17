@@ -61,4 +61,4 @@ O frontend estará disponível em `http://localhost:3000`.
 
 Este README fornece uma visão geral do projeto de Gestão de Produtos, destacando a utilização do Spring Boot no backend e do React JS no frontend. Para obter detalhes específicos sobre cada parte do projeto, consulte os diretórios `produtos` e os demais diretórios do frontend, onde você encontrará documentações e instruções detalhadas sobre a implementação.
 
-Fique à vontade para explorar, expandir e personalizar o projeto para atender às suas necessidades. Se tiver alguma dúvida ou sugestão, não hesite em entrar em contato. Agradecemos por usar nossa aplicação!
+Fique à vontade para explorar, expandir e personalizar o projeto para atender às suas necessidades. Se tiver alguma dúvida ou sugestão, não hesite em entrar em contato.
