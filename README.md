@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Projeto de Gestão de Produtos - Documentação
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é o README para o projeto de Gestão de Produtos, composto por uma aplicação backend desenvolvida utilizando o Spring Boot e um frontend construído com React JS. A aplicação oferece recursos completos para gerenciar informações sobre produtos, incluindo a capacidade de listar, cadastrar, alterar e remover produtos.
 
-## Available Scripts
+## Tecnologias Utilizadas
 
-In the project directory, you can run:
+### Backend (Spring Boot)
 
-### `npm start`
+- Java
+- Spring Boot
+- Spring Data JPA
+- H2 Database (em memória)
+- Lombok
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Frontend (React JS)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React JS
+- JavaScript
+- HTML
+- CSS
+- Axios (para realizar chamadas à API)
 
-### `npm test`
+## Estrutura do Projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+O projeto é dividido em duas partes: o backend desenvolvido com Spring Boot e o frontend construído com React JS.
 
-### `npm run build`
+### Backend (Pasta "produtos")
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+O backend da aplicação foi desenvolvido utilizando o Spring Boot e está localizado na pasta "produtos". Ele inclui as seguintes partes principais:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Controle: Gerencia os endpoints da API e a lógica de manipulação dos dados.
+- Modelo: Define as classes que representam os objetos de domínio da aplicação, como o modelo de produto e a resposta padrão.
+- Repositório: Abstrai as operações de acesso aos dados do produto.
+- Serviço: Implementa a lógica de negócio da aplicação, como listagem, cadastro, alteração e remoção de produtos.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Frontend (Outras Pastas)
 
-### `npm run eject`
+O frontend da aplicação foi construído com React JS e está localizado nas demais pastas. Ele se comunica com o backend por meio de chamadas de API e apresenta as informações de forma amigável ao usuário. Embora não seja fornecida uma explicação completa sobre o frontend neste README, ele oferece uma interface intuitiva para interagir com a API de gestão de produtos.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Executando o Projeto
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Backend (Pasta "produtos")
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Certifique-se de ter o Java e o Maven instalados em sua máquina.
+2. Clone o repositório.
+3. Navegue até o diretório `produtos` do projeto.
+4. Execute o comando `mvn spring-boot:run`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+O backend estará disponível em `http://localhost:8080`.
 
-## Learn More
+### Frontend (Outras Pastas)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Certifique-se de ter o Node.js instalado em sua máquina.
+2. Navegue até o diretório do frontend do projeto (outra pasta).
+3. Execute o comando `npm install` para instalar as dependências.
+4. Execute o comando `npm start`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+O frontend estará disponível em `http://localhost:3000`.
 
-### Code Splitting
+## Considerações Finais
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Este README fornece uma visão geral do projeto de Gestão de Produtos, destacando a utilização do Spring Boot no backend e do React JS no frontend. Para obter detalhes específicos sobre cada parte do projeto, consulte os diretórios `produtos` e o diretório do frontend, onde você encontrará documentações e instruções detalhadas sobre a implementação.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Fique à vontade para explorar, expandir e personalizar o projeto para atender às suas necessidades. Se tiver alguma dúvida ou sugestão, não hesite em entrar em contato. Agradecemos por usar nossa aplicação!
